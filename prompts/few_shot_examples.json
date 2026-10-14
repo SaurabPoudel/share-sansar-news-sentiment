@@ -1,0 +1,52 @@
+[
+  {
+    "headline": "NRB reduces CRR by 50 basis points to boost liquidity in banking sector",
+    "analysis": {
+      "sentiment": "bullish",
+      "score": 0.6,
+      "sector": "commercial_banks",
+      "events": ["regulatory"],
+      "reasoning": "CRR reduction increases lendable funds for banks, positive for banking sector profitability and market liquidity"
+    }
+  },
+  {
+    "headline": "नबिल बैंकले १८% लाभांश दिने (Nabil Bank to give 18% dividend)",
+    "analysis": {
+      "sentiment": "bullish",
+      "score": 0.7,
+      "sector": "commercial_banks",
+      "events": ["dividend"],
+      "reasoning": "High cash dividend announcement is positive for NABIL shareholders. Mixed language headline — Nepali financial news often uses both languages."
+    }
+  },
+  {
+    "headline": "NEPSE index drops 25 points amid low turnover and political uncertainty",
+    "analysis": {
+      "sentiment": "bearish",
+      "score": -0.5,
+      "sector": null,
+      "events": [],
+      "reasoning": "Significant index drop combined with low turnover suggests weak buying interest. Political uncertainty adds macro risk."
+    }
+  },
+  {
+    "headline": "SEBON approves IPO of Himalayan Power Limited",
+    "analysis": {
+      "sentiment": "neutral",
+      "score": 0.1,
+      "sector": "hydropower",
+      "events": ["ipo"],
+      "reasoning": "IPO approval is factual — mildly positive for the specific company but neutral for broader market. IPOs can also divert liquidity from secondary market."
+    }
+  },
+  {
+    "headline": "शेयर बजार स्थिर, कारोबार रकम सामान्य",
+    "analysis": {
+      "sentiment": "neutral",
+      "score": 0.0,
+      "sector": null,
+      "events": [],
+      "reasoning": "Nepali headline meaning 'Share market stable, trading amount normal.' This is a neutral observation with no actionable signal."
+    }
+  }
+]

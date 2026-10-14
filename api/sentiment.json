@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-14T20:02:02.679823+05:45",
+  "status": "ok",
+  "market_date": "2026-10-14",
+  "market_summary": {
+    "nepse_index": null,
+    "change": null,
+    "percent_change": null,
+    "total_turnover": 4136161331.43,
+    "total_traded_shares": 11674209,
+    "total_transactions": 39183,
+    "advances": null,
+    "declines": null,
+    "unchanged": null
+  },
+  "market_sentiment": {
+    "score": 0.15,
+    "label": "bullish",
+    "confidence": 0.8,
+    "drivers": [
+      {
+        "factor": "news_sentiment",
+        "impact": "positive",
+        "detail": "Average news sentiment: 0.38 across 58 articles"
+      },
+      {
+        "factor": "turnover",
+        "impact": "neutral",
+        "detail": "Total turnover: Rs. 4,136,161,331"
+      }
+    ]
+  },
+  "sector_sentiment": [
+    {
+      "sector": "trading",
+      "score": 0.0,
+      "label": "neutral",
+      "reasons": [
+        "Based on 2 related articles"
+      ]
+    },
+    {
+      "sector": "commercial_banks",
+      "score": 0.09,
+      "label": "neutral",
+      "reasons": [
+        "Based on 11 related articles"
+      ]
+    },
+    {
+      "sector": "investment",
+      "score": 0.28,
+      "label": "bullish",
+      "reasons": [
+        "Based on 6 related articles"
+      ]
+    },
+    {
+      "sector": "hydropower",
+      "score": 0.15,
+      "label": "neutral",
+      "reasons": [
+        "Based on 16 related articles"
+      ]
+    },
+    {
+      "sector": "finance",
+      "score": 1.0,
+      "label": "bullish",
+      "reasons": [
+        "Based on 4 related articles"
+      ]
+    },
+    {
+      "sector": "microfinance",
+      "score": 0.75,
+      "label": "bullish",
+      "reasons": [
+        "Based on 4 related articles"
+      ]
+    },
+    {
+      "sector": "hotels",
+      "score": 1.0,
+      "label": "bullish",
+      "reasons": [
+        "Based on 1 related articles"
+      ]
+    },
+    {
+      "sector": "insurance",
+      "score": 1.0,
+      "label": "bullish",
+      "reasons": [
+        "Based on 1 related articles"
+      ]
+    }
+  ],
+  "watchlist": [
+    {
+      "symbol": "NEPSE",
+      "reason": "Positive signals: sentiment=0.46, events=['merger', 'bonus', 'ipo']",
+      "sentiment": "bullish",
+      "tags": [
+        "merger",
+        "bonus",
+        "ipo"
+      ],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/bonus-shares-of-united-ajod-insurance-limited-listed-on-nepse-2026-09-28",
+        "https://www.sharesansar.com/newsdetail/top-10-low-float-development-banks-in-nepse-key-eps-pe-and-npl-insights-2026-08-31",
+        "https://www.sharesansar.com/newsdetail/dashain-effect-on-nepse-what-does-10-years-of-data-tell-us-2026-10-05"
+      ]
+    },
+    {
+      "symbol": "FY",
+      "reason": "Positive signals: sentiment=0.67, events=['dividend', 'bonus', 'agm', 'book_close']",
+      "sentiment": "bullish",
+      "tags": [
+        "dividend",
+        "bonus",
+        "agm",
+        "book_close"
+      ],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/first-microfinance-laghubitta-sanstha-proposes-110526-dividend-for-fy-208283-2026-10-14",
+        "https://www.sharesansar.com/newsdetail/barun-hydropower-company-limited-proposes-5-dividend-for-fy-208283-2026-10-13",
+        "https://www.sharesansar.com/newsdetail/mountain-energy-nepal-proposes-2105263-dividend-for-fy-208283-how-much-in-bonus-shares-and-cash-2026-10-13"
+      ]
+    },
+    {
+      "symbol": "ERC",
+      "reason": "Positive signals: sentiment=0.33, events=[]",
+      "sentiment": "bullish",
+      "tags": [],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/supermai-hydropower-limited-receives-preliminary-approval-from-erc-to-issue-right-shares-at-the-ratio-of-109252-2026-10-12"
+      ]
+    },
+    {
+      "symbol": "HIDCL",
+      "reason": "Positive signals: sentiment=1.00, events=[]",
+      "sentiment": "bullish",
+      "tags": [],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/hidcl-profitable-by-rs-6793-crore-in-q4-equity-investment-rises-to-rs-446-arba-2026-08-18"
+      ]
+    },
+    {
+      "symbol": "PFL",
+      "reason": "Positive signals: sentiment=1.00, events=['merger']",
+      "sentiment": "bullish",
+      "tags": [
+        "merger"
+      ],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/after-successful-merger-between-pfl-and-sfcl-shares-of-pokhara-finance-limited-listed-in-nepse-2026-09-15"
+      ]
+    },
+    {
+      "symbol": "SFCL",
+      "reason": "Positive signals: sentiment=1.00, events=['merger']",
+      "sentiment": "bullish",
+      "tags": [
+        "merger"
+      ],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/after-successful-merger-between-pfl-and-sfcl-shares-of-pokhara-finance-limited-listed-in-nepse-2026-09-15"
+      ]
+    }
+  ],
+  "caution_list": [
+    {
+      "symbol": "FDI",
+      "reason": "Risk signals: sentiment=-0.33, flags=[]",
+      "risk_tags": [
+        "negative_sentiment"
+      ],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/the-fdi-illusion-why-nepals-rising-approvals-hide-a-falling-investment-story-2026-09-06"
+      ]
+    },
+    {
+      "symbol": "SEBON",
+      "reason": "Risk signals: sentiment=0.00, flags=['regulatory', 'ipo']",
+      "risk_tags": [
+        "regulatory",
+        "ipo"
+      ],
+      "sources": [
+        "https://www.sharesansar.com/newsdetail/ipo-proposal-of-saurya-krishi-company-limited-added-to-sebons-pipeline-2026-09-10",
+        "https://www.sharesansar.com/newsdetail/five-companies-enter-sebons-ipo-pipeline-with-share-issues-worth-rs-190-billion-2026-10-13",
+        "https://www.sharesansar.com/newsdetail/sebon-publishes-draft-directive-on-general-eligibility-for-public-issuance-2026-09-18"
+      ]
+    }
+  ],
+  "upcoming_events": [
+    {
+      "symbol": null,
+      "event_type": "regulatory",
+      "date": null,
+      "details": "Leveraging Assets: The Rules, Criteria, and Exclusions for Pledging Listed Shares and Trading on Margin"
+    },
+    {
+      "symbol": null,
+      "event_type": "dividend",
+      "date": null,
+      "details": "Does Dividend Matter for Value Investors?"
+    },
+    {
+      "symbol": "SEBON",
+      "event_type": "ipo",
+      "date": null,
+      "details": "Five Companies Enter SEBON's IPO Pipeline with Share Issues Worth Rs. 1.90 Billion"
+    },
+    {
+      "symbol": "SEBON",
+      "event_type": "regulatory",
+      "date": null,
+      "details": "Five Companies Enter SEBON's IPO Pipeline with Share Issues Worth Rs. 1.90 Billion"
+    },
+    {
+      "symbol": "NEPSE",
+      "event_type": "ipo",
+      "date": null,
+      "details": "IPO shares of Beni Hydropower Project Limited Listed in NEPSE; What are the Opening Ranges?"
+    },
+    {
+      "symbol": null,
+      "event_type": "ipo",
+      "date": null,
+      "details": "Him Parbat Hydropower Limited Issuing IPO Shares to Locals of Dolakha District And Nepalese Employed Abroad From Kartik 11"
+    },
+    {
+      "symbol": null,
+      "event_type": "ipo",
+      "date": null,
+      "details": "170 Days Later: Him Parbat Hydropower IPO Approved for Rs 591.5M Public Issue"
+    },
+    {
+      "symbol": "ABP",
+      "event_type": "ipo",
+      "date": null,
+      "details": "ABP Energy Appoints Siddhartha Capital as IPO Issue Manager"
+    },
+    {
+      "symbol": "NIC",
+      "event_type": "ipo",
+      "date": null,
+      "details": "NIC Asia Capital Appointed Issue and Sales Manager for Birat Agri’s Proposed IPO"
+    },
+    {
+      "symbol": null,
+      "event_type": "ipo",
+      "date": null,
+      "details": "Laxmi Sunrise Capital Appointed Issue Manager for Pushpalal Investment Company’s IPO"
+    },
+    {
+      "symbol": "SEBON",
+      "event_type": "regulatory",
+      "date": null,
+      "details": "SEBON Publishes Draft Directive on General Eligibility for Public Issuance"
+    },
+    {
+      "symbol": null,
+      "event_type": "ipo",
+      "date": null,
+      "details": "IPO Issue of Beni Hydropower Project Limited Closing Today; Oversubscribed 25.76 Times So Far"
+    },
+    {
+      "symbol": "SEBON",
+      "event_type": "ipo",
+      "date": null,
+      "details": "IPO Proposal of Saurya Krishi Company Limited Added to SEBON's Pipeline"
+    },
+    {
+      "symbol": "SEBON",
+      "event_type": "regulatory",
+      "date": null,
+      "details": "IPO Proposal of Saurya Krishi Company Limited Added to SEBON's Pipeline"
+    },
+    {
+      "symbol": "FY",
+      "event_type": "dividend",
+      "date": null,
+      "details": "First Microfinance Laghubitta Sanstha Proposes 11.0526% Dividend For FY 2082/83"
+    },
+    {
+      "symbol": "FY",
+      "event_type": "dividend",
+      "date": null,
+      "details": "Bindhyabasini Hydropower Calls AGM on Kartik 18 to Endorse 5.2632% Dividend FY 82/83; When is the Book Closure Date?"
+    },
+    {
+      "symbol": "FY",
+      "event_type": "agm",
+      "date": null,
+      "details": "Bindhyabasini Hydropower Calls AGM on Kartik 18 to Endorse 5.2632% Dividend FY 82/83; When is the Book Closure Date?"
+    },
+    {
+      "symbol": "FY",
+      "event_type": "book_close",
+      "date": null,
+      "details": "Bindhyabasini Hydropower Calls AGM on Kartik 18 to Endorse 5.2632% Dividend FY 82/83; When is the Book Closure Date?"
+    },
+    {
+      "symbol": "FY",
+      "event_type": "dividend",
+      "date": null,
+      "details": "Barun Hydropower Company Limited Proposes 5% Dividend for FY 2082/83"
+    },
+    {
+      "symbol": "FY",
+      "event_type": "dividend",
+      "date": null,
+      "details": "Mountain Energy Nepal Proposes 21.05263% Dividend for FY 2082/83; How much in Bonus shares and Cash?"
+    }
+  ],
+  "top_news": [
+    {
+      "title": "Too Much Money, Too Little Credit: Nepal's Liquidity Puzzle and What It Means for NEPSE",
+      "url": "https://www.sharesansar.com/newsdetail/too-much-money-too-little-credit-nepals-liquidity-puzzle-and-what-it-means-for-nepse-2026-10-05",
+      "published_at": "Monday, October 5, 2026",
+      "sentiment": "bullish",
+      "importance": "high",
+      "summary": "Monday, October 5, 2026"
+    },
+    {
+      "title": "Leveraging Assets: The Rules, Criteria, and Exclusions for Pledging Listed Shares and Trading on Margin",
+      "url": "https://www.sharesansar.com/newsdetail/leveraging-assets-the-rules-criteria-and-exclusions-for-pledging-listed-shares-and-trading-on-margin-2026-09-29",
+      "published_at": "Tuesday, September 29, 2026",
+      "sentiment": "neutral",
+      "importance": "high",
+      "summary": "Tuesday, September 29, 2026"
+    },
+    {
+      "title": "Does Dividend Matter for Value Investors?",
+      "url": "https://www.sharesansar.com/newsdetail/does-dividend-matter-for-value-investors-2026-09-22",
+      "published_at": "Tuesday, September 22, 2026",
+      "sentiment": "bullish",
+      "importance": "high",
+      "summary": "Tuesday, September 22, 2026"
+    },
+    {
+      "title": "Cheap Money, Costly Mistakes: What Nepal's Liquidity Surplus Really Means for Your Portfolio",
+      "url": "https://www.sharesansar.com/newsdetail/cheap-money-costly-mistakes-what-nepals-liquidity-surplus-really-means-for-your-portfolio-2026-09-15",
+      "published_at": "Tuesday, September 15, 2026",
+      "sentiment": "bullish",
+      "importance": "high",
+      "summary": "Tuesday, September 15, 2026"
+    },
+    {
+      "title": "Nepal Needs Your Support to Combat the Flood in Rasuwa",
+      "url": "https://www.sharesansar.com/newsdetail/nepal-needs-your-support-to-combat-the-flood-in-rasuwa-2026-09-01",
+      "published_at": "Tuesday, September 1, 2026",
+      "sentiment": "bullish",
+      "importance": "high",
+      "summary": "Tuesday, September 1, 2026"
+    },
+    {
+      "title": "Five Companies Enter SEBON's IPO Pipeline with Share Issues Worth Rs. 1.90 Billion",
+      "url": "https://www.sharesansar.com/newsdetail/five-companies-enter-sebons-ipo-pipeline-with-share-issues-worth-rs-190-billion-2026-10-13",
+      "published_at": "Tuesday, October 13, 2026",
+      "sentiment": "neutral",
+      "importance": "high",
+      "summary": "Tuesday, October 13, 2026"
+    },
+    {
+      "title": "IPO shares of Beni Hydropower Project Limited Listed in NEPSE; What are the Opening Ranges?",
+      "url": "https://www.sharesansar.com/newsdetail/ipo-shares-of-beni-hydropower-project-limited-listed-in-nepse-what-are-the-opening-ranges-2026-10-13",
+      "published_at": "Tuesday, October 13, 2026",
+      "sentiment": "bearish",
+      "importance": "high",
+      "summary": "Tuesday, October 13, 2026"
+    },
+    {
+      "title": "Him Parbat Hydropower Limited Issuing IPO Shares to Locals of Dolakha District And Nepalese Employed Abroad From Kartik 11",
+      "url": "https://www.sharesansar.com/newsdetail/him-parbat-hydropower-limited-issuing-ipo-shares-to-locals-of-dolakha-district-and-nepalese-employed-abroad-from-kartik-11-2026-10-12",
+      "published_at": "Monday, October 12, 2026",
+      "sentiment": "bearish",
+      "importance": "high",
+      "summary": "Monday, October 12, 2026"
+    },
+    {
+      "title": "170 Days Later: Him Parbat Hydropower IPO Approved for Rs 591.5M Public Issue",
+      "url": "https://www.sharesansar.com/newsdetail/170-days-later-him-parbat-hydropower-ipo-approved-for-rs-5915m-public-issue-2026-10-06",
+      "published_at": "Tuesday, October 6, 2026",
+      "sentiment": "bearish",
+      "importance": "high",
+      "summary": "Tuesday, October 6, 2026"
+    },
+    {
+      "title": "ABP Energy Appoints Siddhartha Capital as IPO Issue Manager",
+      "url": "https://www.sharesansar.com/newsdetail/abp-energy-appoints-siddhartha-capital-as-ipo-issue-manager-2026-10-01",
+      "published_at": "Thursday, October 1, 2026",
+      "sentiment": "neutral",
+      "importance": "high",
+      "summary": "Thursday, October 1, 2026"
+    },
+    {
+      "title": "NIC Asia Capital Appointed Issue and Sales Manager for Birat Agri’s Proposed IPO",
+      "url": "https://www.sharesansar.com/newsdetail/nic-asia-capital-appointed-issue-and-sales-manager-for-birat-agris-proposed-ipo-2026-10-01",
+      "published_at": "Thursday, October 1, 2026",
+      "sentiment": "neutral",
+      "importance": "high",
+      "summary": "Thursday, October 1, 2026"
+    },
+    {
+      "title": "Laxmi Sunrise Capital Appointed Issue Manager for Pushpalal Investment Company’s IPO",
+      "url": "https://www.sharesansar.com/newsdetail/laxmi-sunrise-capital-appointed-issue-manager-for-pushpalal-investment-companys-ipo-2026-09-22",
+      "published_at": "Tuesday, September 22, 2026",
+      "sentiment": "bullish",
+      "importance": "high",
+      "summary": "Tuesday, September 22, 2026"
+    },
+    {
+      "title": "SEBON Publishes Draft Directive on General Eligibility for Public Issuance",
+      "url": "https://www.sharesansar.com/newsdetail/sebon-publishes-draft-directive-on-general-eligibility-for-public-issuance-2026-09-18",
+      "published_at": "Friday, September 18, 2026",
+      "sentiment": "neutral",
+      "importance": "high",
+      "summary": "Friday, September 18, 2026"
+    },
+    {
+      "title": "IPO Issue of Beni Hydropower Project Limited Closing Today; Oversubscribed 25.76 Times So Far",
+      "url": "https://www.sharesansar.com/newsdetail/ipo-issue-of-beni-hydropower-project-limited-closing-today-oversubscribed-2576-times-so-far-2026-09-11",
+      "published_at": "Friday, September 11, 2026",
+      "sentiment": "bearish",
+      "importance": "high",
+      "summary": "Friday, September 11, 2026"
+    },
+    {
+      "title": "IPO Proposal of Saurya Krishi Company Limited Added to SEBON's Pipeline",
+      "url": "https://www.sharesansar.com/newsdetail/ipo-proposal-of-saurya-krishi-company-limited-added-to-sebons-pipeline-2026-09-10",
+      "published_at": "Thursday, September 10, 2026",
+      "sentiment": "neutral",
+      "importance": "high",
+      "summary": "Thursday, September 10, 2026"
+    }
+  ],
+  "risk_flags": [],
+  "learn_today": [
+    "NEPSE operates Sunday through Thursday. Friday and Saturday are market holidays in Nepal.",
+    "A stock hitting the ±10% circuit limit means trading is frozen at that price — no more orders can be executed beyond that level for the day.",
+    "Book closure date is the cutoff for receiving declared dividends or bonus shares. You must hold shares BEFORE the book closure date to be eligible.",
+    "T+2 settlement means shares bought today are credited to your demat account 2 business days later. You cannot sell shares you just bought until settlement.",
+    "When a company announces a bonus share, the stock price adjusts downward proportionally on the ex-date. A 10% bonus on a Rs.1000 stock adjusts to ~Rs.909."
+  ],
+  "disclaimer": "This is automated analysis for educational and informational purposes only. It is NOT financial advice. NEPSE investing carries significant risk including possible loss of principal. Always do your own research (DYOR) and consult a licensed financial advisor before making investment decisions. Past performance does not guarantee future results."
+}

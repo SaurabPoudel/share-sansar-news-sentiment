@@ -1,0 +1,63 @@
+# ShareSansar Scraping Configuration
+# Updated: 2024-01
+# Note: ShareSansar uses jQuery DataTables with server-side/AJAX loading.
+# Most structured data (prices, gainers, losers) comes from internal API endpoints.
+# News articles are server-rendered HTML.
+
+base_url: "https://www.sharesansar.com"
+
+# Internal API endpoints (found via network inspection)
+# These return JSON or HTML fragments
+api_endpoints:
+  today_price: "/today-share-price"
+  market_summary: "/market-summary"
+  top_gainers: "/top-gainers"
+  top_losers: "/top-losers"
+  top_turnover: "/top-turnover"
+  top_volume: "/top-volume"
+  live_trading: "/live-trading"
+  indices: "/live-index"
+
+# News pages (server-rendered, can use CSS selectors)
+news_pages:
+  exclusive: "/category/exclusive"
+  ipo_fpo: "/category/ipo-fpo-news"
+  dividend: "/category/proposed-dividend"
+  financial_analysis: "/category/financial-analysis"
+  allotment: "/category/share-allotment"
+  listed: "/category/share-listed"
+
+# CSS selectors for news pages
+news_selectors:
+  # Article item on category pages
+  article_item: "div.featured-news-list"
+  article_title: "h4.featured-news-title, .featured-news-title"
+  article_link: "a[href*='newsdetail']"
+  article_date: "p, span.text-muted"
+  article_summary: "p"
+  
+  # Individual article page
+  article_content: "div.post-content"
+  article_tags: "div.tags a"
+
+# Market summary page selectors (some data is in static HTML)
+market_summary_selectors:
+  # The market summary widget on homepage
+  nepse_index: "#nepse-index"
+  market_status: ".market-status"
+  market_cap: ".market-capitalization"
+  
+# Fallback: NEPSE official data (if ShareSansar is blocked)
+fallback_sources:
+  nepse_api: "https://nepalstock.com/api"
+  merolagani: "https://merolagani.com"
+
+# Rate limiting
+rate_limit:
+  requests_per_second: 1.0
+  retry_max: 3
+  retry_backoff_factor: 2.0
+  timeout_seconds: 30
+
+# User agent
+user_agent: "NepseSentimentBot/1.0 (Educational; github.com/SaurabPoudel/share-sansar-news-scrapper)"
