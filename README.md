@@ -17,6 +17,8 @@ Once GitHub Pages is enabled on your fork/repo, your live API is accessible at:
 * **Historical Daily Archive (Past 30 Days):**  
   `https://<username>.github.io/<repo>/api/history/YYYY-MM-DD.json`
 
+These URLs are available only after the **Daily NEPSE Sentiment Analysis** workflow completes a successful Pages deployment. The workflow deploys on pushes to `main`, on its daily schedule, and when run manually. If a custom domain is configured, use the base URL shown by the Pages deployment and append the same `/api/...` path.
+
 CORS is pre-configured via `_headers` so you can consume the JSON directly from any frontend web app or mobile application (`fetch()` / Axios).
 
 ---
@@ -85,6 +87,9 @@ uv run pytest tests/
 ### 1. Enable GitHub Pages
 1. Go to your repository settings: **Settings** → **Pages**.
 2. Under **Build and deployment** → **Source**, select **GitHub Actions**.
+3. After the first successful workflow run, open **Actions** → **Daily NEPSE Sentiment Analysis** and follow its deployment URL. Append `/api/sentiment.json` to that base URL to access the latest JSON.
+
+If GitHub Pages reports that a custom domain is not configured for HTTPS, correct the domain's DNS records with your DNS provider and wait for GitHub Pages to issue its certificate before enabling **Enforce HTTPS**. A custom domain's deployment URL may differ from the default `github.io/<repo>` URL.
 
 ### 2. Add Secrets
 1. Go to **Settings** → **Secrets and variables** → **Actions**.
@@ -93,7 +98,7 @@ uv run pytest tests/
 4. Value: Paste your Google AI Studio API key.
 
 ### 3. Schedule & Execution
-The workflow [`.github/workflows/daily.yml`](.github/workflows/daily.yml) is scheduled to run at **10:15 UTC (4:00 PM Nepal Time)** from Sunday to Thursday, 1 hour after NEPSE trading closes. You can also trigger it manually anytime via the **Actions** tab using **Run workflow**.
+The workflow [`.github/workflows/daily.yml`](.github/workflows/daily.yml) is scheduled to run at **10:15 UTC (4:00 PM Nepal Time)** from Monday to Friday, 1 hour after NEPSE trading closes. You can also trigger it manually anytime via the **Actions** tab using **Run workflow**.
 
 ---
 
@@ -131,7 +136,7 @@ print("Sentiment:", data["market_sentiment"])
 3. **Site Layout Changes:**  
    All CSS selectors and page paths are isolated in [`selectors.yaml`](selectors.yaml). Layout changes can be fixed with single-line configuration edits without refactoring core parsing code.
 4. **Market Holidays / Non-Trading Days:**  
-   NEPSE is closed Fridays, Saturdays, and public holidays. On non-trading days, the pipeline detects the holiday/weekend state and retains the existing output file.
+   NEPSE is closed Saturdays, Sundays, and public holidays. On non-trading days, the pipeline detects the holiday/weekend state and retains the existing output file.
 
 ---
 

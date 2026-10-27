@@ -342,7 +342,7 @@ def analyze_fallback(scraped_data: dict) -> dict:
 
     # ── Educational insights ───────────────────────────────────────────
     learn_today = [
-        "NEPSE operates Sunday through Thursday. Friday and Saturday are market holidays in Nepal.",
+        "NEPSE operates Monday through Friday. Saturday and Sunday are market holidays in Nepal.",
         "A stock hitting the ±10% circuit limit means trading is frozen at that price — no more orders can be executed beyond that level for the day.",
         "Book closure date is the cutoff for receiving declared dividends or bonus shares. You must hold shares BEFORE the book closure date to be eligible.",
         "T+2 settlement means shares bought today are credited to your demat account 2 business days later. You cannot sell shares you just bought until settlement.",

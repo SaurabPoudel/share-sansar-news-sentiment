@@ -26,16 +26,10 @@ def today_npt() -> str:
 
 
 def is_trading_day(dt: datetime | None = None) -> bool:
-    """Check if the given date is a NEPSE trading day (Sun-Thu).
-    
-    Saturday (5) and Friday (4) are holidays in Nepal.
-    Actually NEPSE is open Sun=6, Mon=0, Tue=1, Wed=2, Thu=3.
-    Python weekday(): Mon=0, Tue=1, Wed=2, Thu=3, Fri=4, Sat=5, Sun=6
-    So trading days are: 0,1,2,3,6 (Mon-Thu and Sun)
-    """
+    """Check whether the given date is a NEPSE trading day (Monday-Friday)."""
     if dt is None:
         dt = now_npt()
-    return dt.weekday() in (0, 1, 2, 3, 6)  # Mon-Thu, Sun
+    return dt.weekday() < 5
 
 
 def get_project_root() -> Path:

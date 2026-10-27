@@ -142,7 +142,7 @@ def main() -> None:
 
     # Check if it's a trading day
     if not is_trading_day():
-        logger.info("Not a trading day (Fri/Sat). Checking for existing data...")
+        logger.info("Not a trading day (Sat/Sun). Checking for existing data...")
         existing = load_existing_output(api_dir)
         if existing:
             logger.info("Keeping existing output (non-trading day)")

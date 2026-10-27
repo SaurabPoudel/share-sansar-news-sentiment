@@ -1,11 +1,14 @@
 name: Daily NEPSE Sentiment Analysis
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # Run at 10:15 AM UTC (4:00 PM NPT) Sun-Thu after NEPSE close
-    # NEPSE market hours: Sun-Thu, 11:00 AM - 3:00 PM NPT
+    # Run at 10:15 AM UTC (4:00 PM NPT) Mon-Fri after NEPSE close
+    # NEPSE market hours: Mon-Fri, 11:00 AM - 3:00 PM NPT
     # NPT = UTC+5:45, so 4:00 PM NPT = 10:15 AM UTC
-    - cron: '15 10 * * 0-4'
+    - cron: '15 10 * * 1-5'
   workflow_dispatch:  # Manual trigger
 
 permissions:
